@@ -131,7 +131,8 @@ body{
 .dispositivos__listas{
     display: flex;
     justify-content: center;
-    margin: 2em 0;
+    margin: 2em 0em;
+    flex-wrap: wrap;
 }
 
 .dispositivos__item{
@@ -141,7 +142,11 @@ body{
 
 .rodape{
     text-align: center;
-    margin: 1em 6em;
+    margin: 1em 3em;
+}
+
+.rodape__imagem{
+    margin: 0 4.5em;
 }
 
 .rodape__lista{
@@ -149,6 +154,7 @@ body{
     justify-content: center;
     gap: 16px;
     margin: 2em 0;
+    flex-wrap: wrap;
 }
 
 .lista__link a{
@@ -168,4 +174,61 @@ body{
 
 .lista__link a:hover{
     color: var(--cor-tag-a-footer-hover);
+}
+
+
+@media (min-width: 2119px){
+    .apresentacao__box{
+        left: 12%;
+    }
+}
+
+@media (min-width: 2887px) {
+    .apresentacao__box{
+        left: 18%;
+    }
+}
+
+@media (max-width: 1432px){
+    .container{
+        margin: 0 0 5em 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 679px){
+    .apresentacao{
+        background-image: none;
+        display: block;
+    }
+
+    .apresentacao__box{
+        margin: 10em 0 0 0;
+        padding: 0 1%;
+        width: auto;
+        text-align: center;
+    }
+
+    .apresentacao__imagem{
+        width: 80vw;
+        margin: 3em 0 3em 0;
+    }
+
+    .apresentacao__botao{
+        width: auto;
+    }
+
+    .apresentacao__aviso{
+        width: auto;
+    }
+
+    .container__imagem{
+        width: 80vw;
+    }
+}
+
+@media (max-width: 355px){
+    .dispositivos__listas img{
+        width: 300px;
+    }
 }
